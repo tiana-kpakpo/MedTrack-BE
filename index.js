@@ -11,6 +11,7 @@ import Drug from './routes/drug.js'
 import Lab from './routes/lab.js'
 
 const PORT = process.env.PORT || 8000;
+const NODE_ENV = process.env.NODE_ENV || 'development'; // Default to 'development' if NODE_ENV is not set
 
 const app = express();
 app.use(express.json());
